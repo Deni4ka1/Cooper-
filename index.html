@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooper+</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./normalilze.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="container-logo-nav">
+                <a href="/" class="header__logo">
+                    <img src="./images/icons/cooper__logo.svg" alt="Cooper Logo" class="header__logo-img" width="160"
+                        height="43" loading="lazy">
+                </a>
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a href="/" class="header__menu-link is-current">Каталог</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="/" class="header__menu-link">Новини</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="/" class="header__menu-link">Доставка</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="/" class="header__menu-link">Про нас</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="/" class="header__menu-link">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__interaction">
+                <ul class="header__interaction-list">
+                    <li class="header__interaction-item">
+                        <a href="/" class="header__interaction-link">
+                            <img src="./images/icons/cooper__favorite-icon.svg" alt="favorite"
+                                class="ul header__interaction-img" width="30" height="30" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="header__interaction-item">
+                        <a href="/" class="header__interaction-link">
+                            <img src="./images/icons/cooper__user-icon.svg" alt="user"
+                                class="ul header__interaction-img" width="30" height="30" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="header__interaction-item">
+                        <a href="/" class="header__interaction-link">
+                            <img src="./images/icons/cooper__cart-icon.svg" alt="cart"
+                                class="ul header__interaction-img" width="30" height="30" loading="lazy">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="content container">
+        <section class="slider">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide container-padding">
+                        <img src="./images/cooper__img-bg.jpg" alt="cooper background images" class="slide__img-bg"
+                            loading="lazy">
+                        <div class="slider__body">
+                            <h4 class="slider__big-text">Хіт продаж</h4>
+                            <img src="./images/bottom-line.svg" alt="" class="slider-bottom-line">
+                            <h3 class="slider__title">Дистиллятор для эфірних олій</h3>
+                            <div class="slider__price-body">
+                                <div class="slider__price-text">Ціна</div>
+                                <div class="slider__price">4906 грн</div>
+                            </div>
+                            <button class="slider__button button" type="button">Купити</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/cooper__img-bg-2.jpg" alt="cooper background images" class="slide__img-bg"
+                            width="1920" height="896" loading="lazy">
+                        <div class="slider__body">
+                            <h4 class="slider__big-text">Хіт продаж</h4>
+                            <img src="./images/bottom-line.svg" alt="" class="slider-bottom-line">
+                            <h3 class="slider__title">Дистиллятор для <br /> эфірних олій</h3>
+                            <div class="slider__price-body">
+                                <div class="slider__price-text">Ціна</div>
+                                <div class="slider__price">4906 грн</div>
+                            </div>
+                            <button class="slider__button button" type="button">Купити</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/cooper__img-bg-3.jpg" alt="cooper background images" class="slide__img-bg"
+                            width="1920" height="896" loading="lazy">
+                        <div class="slider__body">
+                            <h4 class="slider__big-text">Хіт продаж</h4>
+                            <img src="./images/bottom-line.svg" alt="" class="slider-bottom-line">
+                            <h3 class="slider__title">Дистиллятор для <br /> эфірних олій</h3>
+                            <div class="slider__price-body">
+                                <div class="slider__price-text">Ціна</div>
+                                <div class="slider__price">4906 грн</div>
+                            </div>
+                            <button class="slider__button button" type="button">Купити</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev swiper-arrow">
+                    <img src="./images/icons/swiper-arrow-left.svg" alt="" class="arrow-swiper">
+                    <div class="arrow-border-p"></div>
+                </div>
+                <div class="swiper-button-next swiper-arrow">
+                    <img src="./images/icons/swiper-arrow-right.svg" alt="" class="arrow-swiper">
+                    <div class="arrow-border-n"></div>
+                </div>
+            </div>
+        </section>
+        <section class="our-product">
+            <div class="our-product__text">Наша продукція</div>
+        </section>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
+    </main>
+
+</body>
+
+</html>
