@@ -15,4 +15,7 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
-// const swiper = document.querySelector('.swiper').swiper;
+document.querySelector('.burger').addEventListener('click', function () {
+    this.classList.toggle('active');
+    document.querySelector('.header__menu').classList.toggle('open');
+});
