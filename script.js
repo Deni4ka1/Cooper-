@@ -73,3 +73,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const favorites = document.querySelectorAll('.card-favorite');
+
+    favorites.forEach((favorite, index) => {
+        const storageKey = `card-favorite-active-${index}`;
+
+        // Відновлення стану з localStorage
+        if (localStorage.getItem(storageKey) === 'true') {
+            favorite.classList.add('active');
+        }
+
+        favorite.addEventListener('click', () => {
+            favorite.classList.toggle('active');
+
+            if (favorite.classList.contains('active')) {
+                localStorage.setItem(storageKey, 'true');
+            } else {
+                localStorage.setItem(storageKey, 'false');
+            }
+        });
+    });
+});
+
