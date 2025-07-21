@@ -872,6 +872,98 @@ h6 {
 }
 
 
+.our-advantages {
+    position: relative;
+    z-index: 1;
+}
+
+.our-advantages-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.our-advantages-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.our-advantages__title {
+    padding-top: 80px;
+}
+
+.our-advantages__body {
+    display: flex;
+    padding-left: var(--container-padding-x);
+    padding-right: var(--container-padding-x);
+    padding-bottom: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-advantages__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.our-advantages__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.advantages-img {
+    margin-bottom: 24px;
+}
+
+.advantages__item-body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.advantages__item-body-title {
+    color: var(--color-darck);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.advantages__item-body-description {
+    font-size: 14px;
+    font-weight: 300;
+    max-width: 327px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-body-description-more {
+    color: var(--color-accent);
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+}
+
+.item-body-description-more span {
+    position: absolute;
+    top: 7px;
+    left: 117px;
+}
+
+
 
 
 
@@ -926,6 +1018,11 @@ h6 {
     .swiper-button-prev,
     .swiper-button-next {
         display: none !important;
+    }
+
+    .our-advantages__list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
     }
 }
 
@@ -1071,6 +1168,10 @@ h6 {
     .reviews__descr-body {
         row-gap: 8px;
     }
+
+    .our-advantages__list {
+        gap: 30px;
+    }
 }
 
 
@@ -1191,6 +1292,34 @@ h6 {
 
     .reviews__descr-body {
         row-gap: 18px;
+    }
+
+    .our-advantages__title {
+        padding-top: 40px;
+    }
+
+    .our-advantages__body {
+        padding-bottom: 40px;
+    }
+
+    .our-advantages__list {
+        gap: 20px;
+    }
+
+    .advantages-img {
+        margin-bottom: 20px;
+    }
+
+    .advantages__item-body {
+        row-gap: 10px;
+    }
+
+    .advantages__item-body-title {
+        font-size: 16px;
+    }
+
+    .advantages__item-body-description {
+        -webkit-line-clamp: 5;
     }
 }
 
