@@ -97,6 +97,7 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--color-light);
 }
 
 a img {
@@ -955,12 +956,140 @@ h6 {
     font-size: 14px;
     font-weight: 700;
     position: relative;
+    cursor: pointer;
 }
 
 .item-body-description-more span {
     position: absolute;
     top: 7px;
     left: 117px;
+}
+
+.footer__main {
+    position: relative;
+    z-index: 1;
+}
+
+.footer__main-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.footer__main-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.footer__main {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: var(--container-padding-x);
+    padding-right: var(--container-padding-x);
+    padding-top: 80px;
+}
+
+.footer-extra {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer-copyright {
+    margin-bottom: 20px;
+    color: #ADADAD;
+}
+
+.footer-copyright-2 a {
+    color: var(--color-light);
+}
+
+.copiright-underline {
+    text-decoration: underline;
+}
+
+.footer__body {
+    display: flex;
+    gap: 70px;
+    margin-bottom: 55px;
+}
+
+.footer__navigation {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 140px;
+}
+
+.footer__nav-item {
+    margin-bottom: 15px;
+}
+
+.footer__catalog {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.footer__catalog-item {
+    margin-bottom: 15px;
+}
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.footer__address {
+    color: var(--color-light);
+}
+
+.footer__contacts-item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+
+.footer__soc1als-list {
+    display: flex;
+    gap: 18px;
+}
+
+.footer__lift {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    max-height: 127px;
+}
+
+.footer-lift-up {
+    margin-bottom: -10px;
+}
+
+.footer-lift-bg {
+    position: relative;
+}
+
+.footer-lift-text {
+    position: absolute;
+    top: 45px;
+    left: -8px;
+    font-size: 18px;
+    font-weight: 700;
+    transform: rotate(90deg);
+    text-transform: uppercase;
 }
 
 
