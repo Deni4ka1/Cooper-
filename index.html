@@ -12,7 +12,7 @@
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container" id="top">
             <div class="container-logo-nav">
                 <a href="/" class="header__logo">
                     <img src="./images/icons/cooper__logo.svg" alt="Cooper Logo" class="header__logo-img" width="160"
@@ -817,10 +817,10 @@
                 loading="lazy">
         </picture>
         <div class="footer-extra">
-            <img src="./images/icons/cooper__logo.svg" alt="Cooper Logo" class="footer__logo-img" width="160"
-                height="43" loading="lazy">
+            <img src="./images/icons/cooper__logo.svg" alt="Cooper Logo" class="footer__logo-img" width="175"
+                height="47" loading="lazy">
             <div class="footer__copyright-body">
-                <div class="footer-copyright">©<time datetime="2021"> 2021</time> “Copper Pro”<br />
+                <div class="footer-copyright">©<time datetime="2021"> 2021</time> “Copper Pro”
                     Всі права захищені
                 </div>
                 <div class="footer__copyright-2">
@@ -829,48 +829,50 @@
             </div>
         </div>
         <div class="footer__body">
-            <div class="footer__navigation">
-                <h3 class="footer__nav-title">Навігація</h3>
-                <ul class="footer__nav-list">
-                    <li class="footer__nav-item">
-                        <a href="/" class="footer__nav-link">Каталог</a>
-                    </li>
-                    <li class="footer__nav-item">
-                        <a href="/" class="footer__nav-link">Нвини</a>
-                    </li>
-                    <li class="footer__nav-item">
-                        <a href="/" class="footer__nav-link">Доставка</a>
-                    </li>
-                    <li class="footer__nav-item">
-                        <a href="/" class="footer__nav-link">Про нас</a>
-                    </li>
-                    <li class="footer__nav-item">
-                        <a href="/" class="footer__nav-link">Контакти</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__catalog">
-                <h3 class="footer__catalog-title">Каталог</h3>
-                <ul class="footer__catalog-list">
-                    <li class="footer__catalog-item">
-                        <a href="/" class="footer__catalog-link">Для ефірних олій</a>
-                    </li>
-                    <li class="footer__catalog-item">
-                        <a href="/" class="footer__catalog-link">Для гідролатів</a>
-                    </li>
-                    <li class="footer__catalog-item">
-                        <a href="/" class="footer__catalog-link">Мідний посуд</a>
-                    </li>
-                    <li class="footer__catalog-item">
-                        <a href="/" class="footer__catalog-link">Аксесуари з міді</a>
-                    </li>
-                    <li class="footer__catalog-item">
-                        <a href="/" class="footer__catalog-link">Індивідуальне замовлення</a>
-                    </li>
-                    <li class="footer__catalog-item">
-                        <a href="/" class="footer__catalog-link">Скидки та замовлення</a>
-                    </li>
-                </ul>
+            <div class="footer__body-adaptive">
+                <div class="footer__navigation">
+                    <h3 class="footer__nav-title">Навігація</h3>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="/" class="footer__nav-link">Каталог</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/" class="footer__nav-link">Нвини</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/" class="footer__nav-link">Доставка</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/" class="footer__nav-link">Про нас</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/" class="footer__nav-link">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__catalog">
+                    <h3 class="footer__catalog-title">Каталог</h3>
+                    <ul class="footer__catalog-list">
+                        <li class="footer__catalog-item">
+                            <a href="/" class="footer__catalog-link">Для ефірних олій</a>
+                        </li>
+                        <li class="footer__catalog-item">
+                            <a href="/" class="footer__catalog-link">Для гідролатів</a>
+                        </li>
+                        <li class="footer__catalog-item">
+                            <a href="/" class="footer__catalog-link">Мідний посуд</a>
+                        </li>
+                        <li class="footer__catalog-item">
+                            <a href="/" class="footer__catalog-link">Аксесуари з міді</a>
+                        </li>
+                        <li class="footer__catalog-item">
+                            <a href="/" class="footer__catalog-link">Індивідуальне замовлення</a>
+                        </li>
+                        <li class="footer__catalog-item">
+                            <a href="/" class="footer__catalog-link">Скидки та замовлення</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="footer__contact">
                 <h3 class="footer__contact-title">Контакти</h3>
@@ -911,9 +913,12 @@
             </div>
         </div>
         <div class="footer__lift">
-            <a href="/" class="footer-lift-up">
-                <img src="./images/footer-lift-bg.jpg" alt="/" class="footer-lift-bg" width="50" height="50"
-                    loading="lazy">
+            <a href="#top" class="footer-lift-up">
+                <picture class="footer-lift-bg-img">
+                    <source srcset="./images/footer-lift-bg-adaptive.jpg" media="(max-width: 768px)">
+                    <img src="./images/footer-lift-bg.jpg" alt="/" class="footer-lift-bg" width="50" height="50"
+                        loading="lazy">
+                </picture>
                 <p class="footer-lift-text">вгору</p>
             </a>
         </div>
